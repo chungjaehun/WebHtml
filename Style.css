@@ -1,0 +1,35 @@
+/*  CSS정의 하기 */
+
+body {
+      font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+}
+
+
+.title{
+      font-size: 45px;
+      margin:0;
+      border-bottom: 10px solid gray ;
+}
+
+.text-center{
+      text-align: center;
+}
+
+.margin-top-10{
+      margin-top: 10px;
+}
+
+
+a {
+      color : black;
+      text-decoration: none;
+}
+
+
+#active{
+      color:red;
+}
+
+.saw{
+      color:gray;
+}
