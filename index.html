@@ -16,7 +16,9 @@
                   color : blue;
                   text-decoration: none;
             }
-
+            li{
+                  padding-bottom: 5px;
+            }
 
             .title{
                   font-size: 45px;
@@ -32,6 +34,10 @@
                   margin-top: 10px;
             }
 
+            #gird{
+                  display: grid;
+                  grid-template-columns: 150px 1fr;
+            }
       </style>
 
 </head>
@@ -40,20 +46,28 @@
 <body>
       <h1 class="title text-center"><a href="./index.html">WEB</a></h1>
 
-      <!-- 목차 지정 -->
-      <ol>
-            <li><a href="./html.html"> HTML</a></li>
-            <li><a href="./CSS.html">CSS</a></li>
-            <li><a href="./JavaScript.html">JavaScript</a></li>
-            <li><a href="./box.html">Box Model</a></li>
-      </ol>
+      <div id= "gird">
+            <div style="border-right: 1px solid gray;">
+                  <!-- 목차 지정 -->
+                  <ol>
+                        <li><a href="./html.html"> HTML</a></li>
+                        <li><a href="./CSS.html">CSS</a></li>
+                        <li><a href="./JavaScript.html">JavaScript</a></li>
+                        <li><a href="./box.html">Box Model</a></li>
+                  </ol>
+            </div>
+            <div style="padding-left: 10px;">
+                  <!-- 본문 작성 -->
+                  <h2>Web 이란 무엇인가</h2>
+                  <p>웹의 원래 의미는 「거미집」으로 하나의 사이트나 또는 다른 사이트와의 관계가 거미집처럼 복잡하게 얽혀 있기 때문에 웹이라고 부른다.</P>
+                  
+                  <!-- 이미지 삽입 -->
+                  <img src="./imags/index.jpg" width="100%">
+            </div>
+      </div>
 
-      <!-- 본문 작성 -->
-      <h2>Web 이란 무엇인가</h2>
-      <p>웹의 원래 의미는 「거미집」으로 하나의 사이트나 또는 다른 사이트와의 관계가 거미집처럼 복잡하게 얽혀 있기 때문에 웹이라고 부른다.</P>
-      
-      <!-- 이미지 삽입 -->
-      <img src="./imags/index.jpg" width="100%">
+
+
 
       
       <!-- 바닥글 -->
