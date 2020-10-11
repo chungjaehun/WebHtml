@@ -37,6 +37,18 @@
             #gird{
                   display: grid;
                   grid-template-columns: 150px 1fr;
+                  }
+            #subGrid{
+                  border-right: 1px solid gray;
+            }
+
+            @media(max-width: 800px){
+                  #subGrid {
+                        border:none;
+                  }
+                  #gird{
+                        display:block;
+                  }
             }
       </style>
 
@@ -47,7 +59,7 @@
       <h1 class="title text-center"><a href="./index.html">WEB</a></h1>
 
       <div id= "gird">
-            <div style="border-right: 1px solid gray;">
+            <div id="subGrid">
                   <!-- 목차 지정 -->
                   <ol>
                         <li><a href="./html.html"> HTML</a></li>
@@ -64,11 +76,7 @@
                   <img src="./imags/index.jpg" width="100%">
             </div>
       </div>
-
-
-
-
-      
+  
       <!-- 바닥글 -->
       <div class="text-center">
             <hr></hr>
