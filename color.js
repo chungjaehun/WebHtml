@@ -1,4 +1,4 @@
-
+// 본문 객체 설정
 var body = {
       setColor:function(color){
             document.querySelector('body').style.color = color;
