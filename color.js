@@ -1,3 +1,5 @@
+
+
 // 본문 객체 설정
 var body = {
       setColor:function(color){
@@ -9,13 +11,14 @@ var body = {
 }
 var Links = {
       setColor: function(color){
-            var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i <alist.length){
-                  var element = alist[i];
-                  element.style.color=color;
-                  i=i+1;
-            }
+            // var alist = document.querySelectorAll('a');
+            // var i = 0;
+            // while(i <alist.length){
+            //       var element = alist[i];
+            //       element.style.color=color;
+            //       i=i+1;
+            // }
+            $('a').css('color',color);
       }
 }
 
