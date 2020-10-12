@@ -8,7 +8,8 @@
 
       <link rel="stylesheet" href="https://chungjaehun.github.io/WebHtml/Style.css">
       <script src= "https://chungjaehun.github.io/WebHtml/color.js"></script> 
-      <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
       <!-- <style>
             body {
                   font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
@@ -58,35 +59,10 @@
       <h1 class="title text-center"><a href="./index.html">WEB</a></h1>
 
       <div>
-            <input type="button" value="night" onclick="
-            var target = document.querySelector('body');
-            if (this.value == 'night'){
-                  target.style.backgroundColor='black';
-                  target.style.color='white';
-                  this.value='day';
-
-                  var coworkers = document.querySelectorAll('a');
-                  var i = 0;
-                  while(i <coworkers.length){
-                        var element = coworkers[i];
-                        element.style.color='powderblue';
-                        i=i+1;
-                  }
-
-            } else{
-                  target.style.backgroundColor='white';
-                  target.style.color='black';
-                  this.value='night';
-
-                  var coworkers = document.querySelectorAll('a');
-                  var i = 0;
-                  while(i <coworkers.length){
-                        var element = coworkers[i];
-                        element.style.color='blue';
-                        i=i+1;
-                  }
-            }
-            " style="font-size:20px; width:80px;text-align: center; margin-left:20px; margin-top:10px;">
+            <input  style="font-size:20px; width:80px;text-align: center; margin-left:20px; margin-top:10px;"
+                    type="button" value="night" onclick="
+                        nightDayHandler(this);
+            ">
       </div>
 
       <div id= "gird">
