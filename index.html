@@ -53,6 +53,7 @@
 <!-- 본문 내용 -->
 <body>
       <h1 class="title text-center"><a href="./index.html">WEB</a></h1>
+
       <div>
             <input type="button" value="night" onclick="
             var target = document.querySelector('body');
@@ -61,10 +62,26 @@
                   target.style.color='white';
                   this.value='day';
 
+                  var coworkers = document.querySelectorAll('a');
+                  var i = 0;
+                  while(i <coworkers.length){
+                        var element = coworkers[i];
+                        element.style.color='powderblue';
+                        i=i+1;
+                  }
+
             } else{
                   target.style.backgroundColor='white';
                   target.style.color='black';
                   this.value='night';
+
+                  var coworkers = document.querySelectorAll('a');
+                  var i = 0;
+                  while(i <coworkers.length){
+                        var element = coworkers[i];
+                        element.style.color='blue';
+                        i=i+1;
+                  }
             }
             " style="font-size:20px; width:80px;text-align: center; margin-left:20px; margin-top:10px;">
       </div>
