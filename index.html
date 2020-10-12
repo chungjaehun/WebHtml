@@ -12,58 +12,15 @@
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 
-      <!-- <style>
-            body {
-                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
-                  font-size:18px;
-            }
-            a {
-                  color : blue;
-                  text-decoration: none;
-            }
-            li{
-                  padding-bottom: 5px;
-            }
-
-            .title{
-                  font-size: 45px;
-                  margin:0;
-                  border-bottom: 10px solid gray ;
-            }
-            .text-center{
-                  text-align: center;
-            }
-            .margin-top-10{
-                  margin-top: 10px;
-            }
-            #gird{
-                  display: grid;
-                  grid-template-columns: 150px 1fr;
-            }
-            #subGrid{
-                  border-right: 1px solid gray;
-            }
-
-            @media(max-width: 800px){
-                  #subGrid {
-                        border:none;
-                  }
-                  #gird{
-                        display:block;
-                  }
-            }
-      </style> -->
-
 </head>
 
 <!-- 본문 내용 -->
 <body>
-      <h1 class="title text-center"><a href="./index.html">WEB</a></h1>
-
+      <h1 class="title text-center"><a href="./index.html">HAN YOUNG</a></h1>
+      <P id="hello">저희 사이트에 방문을 환영합니다.</P>
       <div>
-            <input  style="font-size:20px; width:80px;text-align: center; margin-left:20px; margin-top:10px;"
-                    type="button" value="night" onclick="
-                        nightDayHandler(this);
+            <input  id = "btnNightDay" type="button" value="night" onclick="
+                  nightDayHandler(this);
             ">
       </div>
 
