@@ -50,38 +50,9 @@
             }
       </style>
 
-      <script>
+      <script src="/color.js"> </script>
 
-            function nightDayHandler(self){
-                  var target = document.querySelector('body');
-                  if (self.value == 'night'){
-                        target.style.backgroundColor='black';
-                        target.style.color='white';
-                        self.value='day';
-
-                        var coworkers = document.querySelectorAll('a');
-                        var i = 0;
-                        while(i <coworkers.length){
-                              var element = coworkers[i];
-                              element.style.color='powderblue';
-                              i=i+1;
-                        }
-
-                  } else{
-                        target.style.backgroundColor='white';
-                        target.style.color='black';
-                        self.value='night';
-
-                        var coworkers = document.querySelectorAll('a');
-                        var i = 0;
-                        while(i <coworkers.length){
-                              var element = coworkers[i];
-                              element.style.color='blue';
-                              i=i+1;
-                        }
-                  }
-            }
-      </script>
+      
 </head>
 
 <!-- 본문 내용 -->
@@ -132,7 +103,7 @@
                         </div>
 
                         <li><span class="fontBold">배열</span>이라는 것은 <span class="fontBold">순서대로 연관된 데이터를 잘 정리 정돈하는 것</span>이고, <span class="fontBold">반복문은 순서대로 배열에 데이터를 하나씩 꺼내서 자동화된 처리를 할 수 있는 문법</span>이기 때문에 이 두개의 기능이 '환상의 콤비' 같은 역할을 할 수 있습니다.</li>
-
+                        <li>함수는 코드가 많아지면 정리정돈하는 도구이고, 객체는 함수와 변수가 많아지면 연관된 것들을 정리 정돈하는 도구이다.</li>
                   </ul>          
             </div>
       </div>
