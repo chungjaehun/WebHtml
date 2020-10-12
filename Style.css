@@ -1,2 +1,44 @@
 /*  CSS정의 하기 */
 
+            body {
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+            }
+            a {
+                  color : blue;
+                  text-decoration: none;
+            }
+            li{
+                  padding-bottom: 5px;
+            }
+
+            .title{
+                  font-size: 45px;
+                  margin:0;
+                  border-bottom: 10px solid gray ;
+            }
+            .text-center{
+                  text-align: center;
+            }
+            .margin-top-10{
+                  margin-top: 10px;
+            }
+            #gird{
+                  display: grid;
+                  grid-template-columns: 150px 1fr;
+            }
+            #subGrid{
+                  border-right: 1px solid gray;
+            }
+            @media(max-width: 800px){
+                  #subGrid {
+                        border:none;
+                  }
+                  #gird{
+                        display:block;
+                  }
+            }
+            .fontBold{
+                  font-weight: bold;
+            }
+
