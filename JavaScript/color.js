@@ -23,7 +23,7 @@ function nightDayHandler(self){
             $('#MainTitle').css('color','#505050')
       } else{
             body.setBackgroundColor('white');
-            body.setColor('black');
+            body.setColor('#505050');
             self.value='night';
             Links.setColor('blue');
             $('#MainTitle').css('color','#505050')
