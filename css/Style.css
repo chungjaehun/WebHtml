@@ -47,7 +47,7 @@ li{
 
 #hello{
       padding-left: 20px;
-      margin-top: 0;
+      margin: 0;
       font-size: 20px;
       color:#fff;
       background-color: #969696;
@@ -61,3 +61,4 @@ li{
       margin-left:20px; 
       margin-top:10px;
 }
+
