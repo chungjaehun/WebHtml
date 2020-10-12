@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>WEB - Home</title>
+
+      <link rel="stylesheet" href="https://chungjaehun.github.io/WebHtml/css/Style.css">
+      <script src= "https://chungjaehun.github.io/WebHtml/JavaScript/color.js"></script> 
+      <script src= "https://chungjaehun.github.io/WebHtml/JavaScript/Date.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+</head>
+
+<body>
+      <!-- 타이틀 -->
+      <h1 class="title text-center"><a id="MainTitle" style="color:#505050;" href="./index.html">HAN YOUNG</a></h1>
+      <P id="hello" style ="margin:0;">저희 사이트에 방문을 환영합니다.</P>
+      <div>
+            <input id="btnNightDay" type="button" value="night" onclick="
+                  nightDayHandler(this);
+            ">
+      </div>
+
+      <!-- 본문  -->
+      <div id= "gird">
+            <div id="subGrid"></div>
+
+            <div style="padding-left: 10px;">
+                  <h2>자동 Bill of Material</h2>
+                  <p>Tekla Program으로 작성된 도면에 관한 Bill of Material을 작성하는 과정에서 많은 소요시간과 정형화 되지 않은 폼으로 작성되어 이것을 보완하고자 개발하였습니다.</p>
+                  <!-- <div style="display: grid; grid-template-columns: 1fr 1fr;"> -->
+                        <div style="margin-left:50px">
+                              <img src="./imags/Report-main.png" width="80%">
+                        </div>
+                  <!-- </div> -->
+                  
+                  <h2>작성 리스트 목록</h2>
+                  <ul>
+                        <li style="margin-top: 50px;">ASSEMBLY DRAWING</li>
+                        <img src="./imags/Report-assembly.png" width="80%">
+                        <li style="margin-top: 50px;">SINGLE PART DRAWING</li>
+                        <img src="./imags/Report-single.png" width="80%">
+                        <li style="margin-top: 50px;">MANUFACTURING REPORT</li>
+                        <img src="./imags/Report-MANUFACTURING.png" width="80%">
+                        <li style="margin-top: 50px;">BILL OF MATERIAL</li>
+                        <img src="./imags/Report-BOM.png" width="80%">
+                        <li style="margin-top: 50px;">PROFILES SUMMARY LIST</li>
+                        <img src="./imags/Report-Profiles_summary.png" width="80%">
+                        <li style="margin-top: 50px;">ASSEMBLY POSITION REPORT</li>
+                        <img src="./imags/Report-Assembly_Position.png" width="80%">
+                        <li style="margin-top: 50px;">ASSEMBLY ITEM REPORT</li>
+                        <img src="./imags/Report_Assembly_item.png" width="80%">
+                        
+                  </ul>
+            </div>
+
+      </div>            
+
+      <!-- 바닥글 -->
+      <div class="text-center">
+            <hr></hr>
+            Copyright &copy; <script>setYear()</script> <em>Hangyoung Eng.</em> all right reserved.
+      </div>
+</body>
+</html>
+
+
+
