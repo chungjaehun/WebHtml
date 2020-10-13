@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>음악 듣기</title>
+
+      <link rel="stylesheet" href="https://chungjaehun.github.io/WebHtml/css/Style.css">
+      <script src= "https://chungjaehun.github.io/WebHtml/JavaScript/color.js"></script> 
+      <script src= "https://chungjaehun.github.io/WebHtml/JavaScript/Date.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+      <style>
+            #gird1{
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+            }
+            @media(max-width: 800px){
+
+      #gird1{
+            display:block;
+      }
+}
+      </style>
+
+</head>
+
+<!-- 본문 내용 -->
+<body>
+      <h1 class="title text-center"><a id="MainTitle" style="color:#505050;" href="./index.html">HAN YOUNG</a></h1>
+      <P id="hello" style ="margin:0;">저희 사이트에 방문을 환영합니다.</P>
+      <div>
+            <input id="btnNightDay" type="button" value="night" onclick="
+                  nightDayHandler(this);
+            ">
+      </div>
+      
+      <div id= "gird">
+            <div id="subGrid">
+
+            </div>
+            <div style="padding-left: 10px;">
+                  <!-- 본문 작성 -->
+                  <h3>MP3 노래</h3>
+                        <div>
+                              <div style= "vertical-align:20px;display:inline-block;width:400px">사랑을 위하여-김종환</div>
+                              <audio loop controls>
+                                    <source src="https://chungjaehun.github.io/WebHtml/music/사랑을_위하여-김종환.mp3">
+                                    <!-- <source src="./music/001. 김종환 - 사랑을 위하여.mp3"> -->
+                              </audio> 
+                        </div>
+                        <div>
+                              <div style= "vertical-align:20px;display:inline-block;width:400px">무조건-박상철</div>
+                              <audio loop controls style="align-self:flex-end;">
+                                    <source src="https://chungjaehun.github.io/WebHtml/music/무조건_박상철.mp3">
+                                    <!-- <source src="./music/무조건_박상철.mp3"> -->
+                              </audio> 
+                        </div>
+                        <div>
+                              <div style= "vertical-align:20px;display:inline-block;width:400px">BeMyBaby</div>
+                              <audio loop controls>
+                                    <source src="https://chungjaehun.github.io/WebHtml/music/BeMyBaby.mp3">
+                                    <!-- <source src="./music/BeMyBaby.mp3"> -->
+                              </audio> 
+                        </div>
+
+                  <h3>라이오 극장</h3>
+                        <div>
+                              <div style= "vertical-align:20px;display:inline-block;width:400px">진시황</div>
+                              <audio loop controls>
+                                    <source src="https://chungjaehun.github.io/WebHtml/music/동양사-012.mp3">
+                                    <!-- <source src="./music/동양사-012.mp3"> -->
+                              </audio> 
+                        </div>
+            </div>
+      </div>
+
+      <!-- 바닥글 -->
+      <div class="text-center">
+            <hr></hr>
+            Copyright &copy; <script>setYear()</script> <em>Hangyoung Eng.</em> all right reserved.
+      </div>
+</body>
+</html>
+
+      </div>
+</body>
+</html>
+
+
