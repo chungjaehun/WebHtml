@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>WEB - Home</title>
+
+      <link rel="stylesheet" href="https://chungjaehun.github.io/WebHtml/css/Style.css">
+      <script src= "https://chungjaehun.github.io/WebHtml/JavaScript/color.js"></script> 
+      <script src= "https://chungjaehun.github.io/WebHtml/JavaScript/Date.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+</head>
+
+<body>
+      <!-- 타이틀 -->
+      <h1 class="title text-center"><a id="MainTitle" style="color:#505050;" href="./index.html">HAN YOUNG</a></h1>
+      <P id="hello" style ="margin:0;">저희 사이트에 방문을 환영합니다.</P>
+      <div>
+            <input id="btnNightDay" type="button" value="night" onclick="
+                  nightDayHandler(this);
+            ">
+      </div>
+
+      <!-- 본문  -->
+      <div id= "gird">
+            <div id="subGrid"></div>
+
+            <div style="padding-left: 10px;">
+                  <h2>모델 비교 리스트 출력 프로그램</h2>
+                  <p>Tekla Program으로 작성된 이전 모델과 최종 모델을 비교하여 변경된 내용에 대한 내용을 작성하는 프로그램이다.</p>
+                  <div style="margin-left:50px">
+                        <img src="./imags/Compare01.png" width="80%">
+                  </div>
+                  
+                  <h2 style="margin-top:50px;">변경 리스트 작성</h2>
+                  <ul>
+                        <li>비교 검토한 내용 리스트 출력</li>
+                        <img src="./imags/Compare02.png" width="80%">
+                        <li style="margin-top: 50px;">엑셀로 자동 출력</li>
+                        <img src="./imags/Compare03.png" width="80%">
+                  </ul>
+
+                  <h2 style="margin-top:50px;">변경된 내용 도면에 표기</h2>
+                  <ul>
+                        <li>비교 검토한 내용 리스트 출력</li>
+                        <img src="./imags/Compare04.png" width="80%">
+                        <li style="margin-top: 50px;">1. 테클라상에서 열려있는 2D도면상에서 해당된 내용을 자동으로 변경내용을 기록한다.</li>
+                        <img src="./imags/Compare05.png" width="80%">
+                        <li style="margin-top: 50px;">2. 테클라상에서 drawing list에서 선택된 도면에 대해서 자동으로 변경내용을 기록한다.</li>
+                        <img src="./imags/Compare06.png" width="80%">
+                        <img src="./imags/Compare07.png" width="80%">
+                        <li style="margin-top: 50px;">3. 변경된 내용에 대한 내용을 엑셀로 출력한다.</li>
+                        <img src="./imags/Compare08.png" width="80%">
+                  </ul>
+            </div>
+
+      </div>            
+
+      <!-- 바닥글 -->
+      <div class="text-center">
+            <hr></hr>
+            Copyright &copy; <script>setYear()</script> <em>Hangyoung Eng.</em> all right reserved.
+      </div>
+</body>
+</html>
+
+
+
