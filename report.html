@@ -6,68 +6,134 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>WEB - Home</title>
 
-      <link rel="stylesheet" href="https://chungjaehun.github.io/WebHtml/css/Style.css">
-      <script src= "https://chungjaehun.github.io/WebHtml/JavaScript/color.js"></script> 
-      <script src= "https://chungjaehun.github.io/WebHtml/JavaScript/Date.js"></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+      <style>
+            #btnNightDay{
+                  width:80px;
+                  text-align: center; 
+                  margin-left:20px; 
+                  margin-top:10px;
+            }
+      </style>
+
+      <script> 
+            function setYear(){
+                  var now = new Date();
+                  document.write(now.getFullYear()); 
+            }
+            var body = {
+                  setColor:function(color){
+                        document.querySelector('body').style.color = color;
+                  },
+                  setBackgroundColor:function(color){
+                        document.querySelector('body').style.backgroundColor = color;
+                  },
+            }
+            function nightDayHandler(self){
+                  var target = document.querySelector('body');
+                  if (self.value == 'night'){
+                        body.setBackgroundColor('black');
+                        body.setColor('white');
+                        self.value='day';
+                  } else{
+                        body.setBackgroundColor('white');
+                        body.setColor('#505050');
+                        self.value='night';
+                  }
+            }
+      </script>
 
 </head>
 
+
 <body>
-      <!-- 타이틀 -->
-      <h1 class="title text-center"><a id="MainTitle" style="color:#505050;" href="./index.html">HAN YOUNG</a></h1>
-      <P id="hello" style ="margin:0;">저희 사이트에 방문을 환영합니다.</P>
-      <div>
-            <input id="btnNightDay" type="button" value="night" onclick="
-                  nightDayHandler(this);
-            ">
-      </div>
 
-      <!-- 본문  -->
-      <div id= "gird">
-            <div id="subGrid">
-                  <ol>
-                        <li><a href="./report.html">자동 BOM</a></li>
-                        <li><a href="./CompareModel.html">변경 리스트</a></li>
-                        <li><a href="./Quick_View.html">모델 검색</a></li>
-                  </ol>
-            </div>
+      <!-- 네이게이션 -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <form class="form-inline" style="margin-right:20px;">
+                  <button class="btn btn-sm btn-outline-secondary" type="button" value="night" onclick="nightDayHandler(this)">Night</button>
+            </form>
 
-            <div style="padding-left: 10px;">
-                  <h2>자동 Bill of Material</h2>
-                  <p>Tekla Program으로 작성된 도면에 관한 Bill of Material을 작성하는 과정에서 많은 소요시간과 정형화 되지 않은 폼으로 작성되어 이것을 보완하고자 개발하였습니다.</p>
-                        <div style="margin-left:50px">
-                              <img src="./imags/Report-main.png" width="80%">
-                        </div>
-                  
-                  <h2>작성 리스트 목록</h2>
-                  <ul>
-                        <li>ASSEMBLY DRAWING</li>
-                        <img src="./imags/Report-assembly.png" width="80%">
-                        <li style="margin-top: 50px;">SINGLE PART DRAWING</li>
-                        <img src="./imags/Report-single.png" width="80%">
-                        <li style="margin-top: 50px;">MANUFACTURING REPORT</li>
-                        <img src="./imags/Report-MANUFACTURING.png" width="80%">
-                        <li style="margin-top: 50px;">BILL OF MATERIAL</li>
-                        <img src="./imags/Report-BOM.png" width="80%">
-                        <li style="margin-top: 50px;">PROFILES SUMMARY LIST</li>
-                        <img src="./imags/Report-Profiles_summary.png" width="80%">
-                        <li style="margin-top: 50px;">ASSEMBLY POSITION REPORT</li>
-                        <img src="./imags/Report-Assembly_Position.png" width="80%">
-                        <li style="margin-top: 50px;">ASSEMBLY ITEM REPORT</li>
-                        <img src="./imags/Report_Assembly_item.png" width="80%">
-                        
+            <a class="navbar-brand" href="#">Han Young</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                        <li class="nav-item active">
+                              <a class="nav-link" href="./index.html">홈 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="./Introduction.html">회사소개</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="#">회사약력</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    개발 프로그램
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="./report.html">자동 BOM</a>
+                                    <a class="dropdown-item" href="./CompareModel.html">변경 리스트</a>
+                                    <a class="dropdown-item" href="./Quick_View.html">모델 검색</a>
+                              </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    자료 공유
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="./technical.html">3D Work Flow Chart</a>
+                                    <a class="dropdown-item" href="./Unit_weight.html">단위중량 계산</a>
+                              </div>
+                        </li>
                   </ul>
             </div>
+            <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+      </nav>
 
-      </div>            
 
-      <!-- 바닥글 -->
-      <div class="text-center">
-            <hr></hr>
-            Copyright &copy; <script>setYear()</script> <em>Hangyoung Eng.</em> all right reserved.
+      <div style="margin-left:50px">
+            <h3>자동 Bill of Material</h3>
+            <p>Tekla Program으로 작성된 도면에 관한 Bill of Material을 작성하는 과정에서 많은 소요시간과 정형화 되지 않은 폼으로 작성되어 이것을 보완하고자 개발하였습니다.</p>
+                  <div style="margin-left:50px">
+                        <img src="./imags/Report-main.png" width="80%">
+                  </div>
+            
+            <h3>작성 리스트 목록</h3>
+            <ul>
+                  <li>ASSEMBLY DRAWING</li>
+                  <img src="./imags/Report-assembly.png" width="80%">
+                  <li style="margin-top: 50px;">SINGLE PART DRAWING</li>
+                  <img src="./imags/Report-single.png" width="80%">
+                  <li style="margin-top: 50px;">MANUFACTURING REPORT</li>
+                  <img src="./imags/Report-MANUFACTURING.png" width="80%">
+                  <li style="margin-top: 50px;">BILL OF MATERIAL</li>
+                  <img src="./imags/Report-BOM.png" width="80%">
+                  <li style="margin-top: 50px;">PROFILES SUMMARY LIST</li>
+                  <img src="./imags/Report-Profiles_summary.png" width="80%">
+                  <li style="margin-top: 50px;">ASSEMBLY POSITION REPORT</li>
+                  <img src="./imags/Report-Assembly_Position.png" width="80%">
+                  <li style="margin-top: 50px;">ASSEMBLY ITEM REPORT</li>
+                  <img src="./imags/Report_Assembly_item.png" width="80%">
+                  
+            </ul>
       </div>
+       
+      <!-- 바닥글 -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            Copyright &copy; <script>setYear()</script> <em>&nbsp;HanYoung Eng.&nbsp;</em> all right reserved.
+      </nav>
+
 </body>
 </html>
 
