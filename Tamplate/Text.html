@@ -3,7 +3,7 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>bootstrap</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -12,7 +12,7 @@
 
 </head>
 <body>
-
+      <h1>텍스트 색상</h1>
       <p class="text-primary">.text-primary</p>
       <p class="text-secondary">.text-secondary</p>
       <p class="text-success">.text-success</p>
@@ -27,7 +27,71 @@
       <p class="text-black-50">.text-black-50</p>
       <p class="text-white-50 bg-dark">.text-white-50</p>   
 
+      <hr style="border:5px solid red;">
+      <h1>텍스트 박스 색상</h1>
+      <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+      <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+      <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+      <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+      <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+      <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+      <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+      <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+      <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+      <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>   
 
+      <hr style="border:5px solid red;">
+      <h1>텍스트 박스 영역 크기 지정</h1>
+      <div class="w-25 p-3 bg-primary text-white">Width 25%</div>
+      <div class="w-50 p-3 bg-secondary text-white">Width 50%</div>
+      <div class="w-75 p-3 bg-dark text-white">Width 75%</div>
+      <div class="w-100 p-3 bg-success text-white">Width 100%</div>
+      <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+            
+      <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+      <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+      <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+      <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+      </div>
+
+      <hr style="border:5px solid red;">
+      <h1>텍스트 정렬</h1>
+      <p class="text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.</p>
+
+      <p class="text-left">Left aligned text on all viewport sizes.</p>
+      <p class="text-center">Center aligned text on all viewport sizes.</p>
+      <p class="text-right">Right aligned text on all viewport sizes.</p>
+
+      <hr style="border:5px solid red;">
+      <h1>텍스트 속성</h1>
+      <p class="font-weight-bold">Bold text.</p>
+      <p class="font-weight-normal">Normal weight text.</p>
+      <p class="font-weight-light">Light weight text.</p>
+      <p class="font-italic">Italic text.</p>
+ 
+      <hr style="border:5px solid red;">
+      <h1>테이블에서 텍스트 정렬</h1>
+      <style>
+            tbody, th, td, tr{
+                  border:1px solid red;
+            }
+            td:nth-child(1){width:20%}
+            td:nth-child(2){width:20%}
+            td:nth-child(3){width:20%}
+            td:nth-child(4){width:20%}
+
+      </style>
+      <table style="height: 100px;">
+            <tbody>
+                  <tr class="class">
+                        <td class="align-baseline">baseline</td>
+                        <td class="align-top">top</td>
+                        <td class="align-middle">middle</td>
+                        <td class="align-bottom">bottom</td>
+                  </tr>
+            </tbody>
+      </table>
+      
 
 </body>
 </html>
