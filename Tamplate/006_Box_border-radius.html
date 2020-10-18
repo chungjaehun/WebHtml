@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+
+            div {
+                  box-sizing: border-box;
+                  width: 200px;
+                  height: 200px;
+                  margin: 20px auto;
+                  background-color: orange;
+            }
+            .jb {
+	            border-radius: 20px 40px 60px 80px / 80px 60px 40px 20px;
+            }
+            .jb1 {
+	            border-radius: 40px 80px / 80px 40px;
+            }
+            .jb2 {
+	            border-radius: 80px / 40px;
+            }
+            .jb3 {
+	            border-radius: 20px 40px 60px 80px;
+            }
+            .jb4 {
+	            border-radius: 40px 80px;
+            }
+            .jb5 {
+	            border-radius: 50%;
+            }
+
+      </style>
+</head>
+<body>
+      <h2>border-radius</h2>
+      <ul>
+            <li>border-radius는 테두리를 둥글게 만드는 속성입니다.</li>
+            <li>CSS3에서 정의되었으며, IE는 버전 9부터 지원합니다.(IE8에서 사용하는 방법)</li> 
+            <li>8개의 속성 값을 넣어야 하지만, 값이 같다면 짧게 쓸 수 있습니다.</li>
+            <li>다음 상자의 테두리를 여러 가지 방식으로 둥글게 만들어보겠습니다.</li>
+      </ul>
+      <div></div>
+
+      <h3>문법 1</h3>
+      <p class="comment">border-radius: top-left-x top-right-x bottom-right-x bottom-left-x / top-left-y top-right-y bottom-right-y bottom-left-y</p>
+      <ul>
+            <li>속성의 값에는 px, % 등 길이 단위를 넣습니다. 그 길이만큼 둥글게 만듭니다.</li>
+            <li>8군데의 길이를 정해야 하는데, 각 위치는 다음과 같습니다.</li> 
+      </ul>
+      <img src="/imags/css-border-radius-01.png" width="640px">
+      <div class="jb"></div>
+
+      <h3>문법 2</h3>
+      <p class="comment">border-radius: aa bb / cc dd</p>
+      <ul>
+            <li>대각선 방향으로 값이 같을 때 사용할 수 있습니다.</li>
+            <li>다음과 의미가 같습니다</li> 
+      </ul>
+      <p class="comment">border-radius: aa bb aa bb / cc dd cc dd</p>
+      <div class="jb1"></div>
+
+      <h3>문법 3</h3>
+      <p class="comment">border-radius: aa / bb</p>
+      <ul>
+            <li>네 곳이 모두 같을 때 사용할 수 있습니다.</li>
+            <li>다음과 의미가 같습니다</li> 
+      </ul>
+      <p class="comment">border-radius: aa aa aa aa / bb bb bb bb</p>
+      <div class="jb2"></div>
+
+      <h3>문법 4</h3>
+      <p class="comment">border-radius: aa bb cc dd</p>
+      <ul>
+            <li>가로 방향과 세로 방향의 값이 같다면 앞에 부분만 쓸 수 있습니다.</li>
+            <li>다음과 의미가 같습니다</li> 
+      </ul>
+      <p class="comment">border-radius: aa bb cc dd / aa bb cc dd</p>
+      <div class="jb3"></div>
+      
+      <h3>문법 5</h3>
+      <p class="comment">border-radius: aa bb</p>
+      <ul>
+            <li>다음과 의미가 같습니다</li> 
+      </ul>
+      <p class="comment">border-radius: aa bb aa bb / aa bb aa bb</p>
+      <div class="jb4"></div>     
+
+      <h3>문법 6</h3>
+      <p class="comment">border-radius: aa</p>
+      <ul>
+            <li>다음과 의미가 같습니다</li> 
+      </ul>
+      <p class="comment">border-radius: aa aa aa aa / aa aa aa aa</p>
+      <div class="jb5"></div>
+
+      <h3>위치별 속성</h3>
+      <p>각 위치를 가리키는 속성이 따로 있습니다. 예를 들어</p>
+      <p class="comment">border-radius: 10px 20px 30px 40px / 40px 30px 20px 10px;</p>
+      <p>는 다음과 같습니다.</p>
+      <nav class="comment">
+            <p>border-top-left-radius: 10px 40px;</p>
+            <p>border-top-right-radius: 20px 30px;</p>
+            <p>border-bottom-right-radius: 30px 20px;</p>
+            <p>border-bottom-left-radius: 40px 10px;</p>
+      </nav>
+      <p>값을 하나만 쓰면 가로 방향과 세로 방향의 값이 같다는 뜻입니다. 예를 들어</p>
+      <nav class="comment">
+            <p>border-top-left-radius: 10px;</p>
+            <p>border-top-right-radius: 20px;</p>
+            <p>border-bottom-right-radius: 30px;</p>
+            <p>border-bottom-left-radius: 40px;</p>
+      </nav>
+      <p>는 다음과 같습니다.</p>
+      <p class="comment">border-radius: 10px 20px 30px 40px / 10px 20px 30px 40px;</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

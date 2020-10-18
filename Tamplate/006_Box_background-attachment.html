@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+                  height: 600px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+
+
+            div {
+                  width: 30%;
+                  height: 300px;
+                  overflow: auto;
+                  float: left;
+                  margin: 0px 10px;
+                  background-image: url( "/imags/bg-300x200.jpg" );
+                  background-repeat: no-repeat;
+                  border: 1px solid #bcbcbc;
+                  font-size: 36px;
+            }
+            .jb-scroll {
+                  background-attachment: scroll;
+            }
+            .jb-fixed {
+                  background-attachment: fixed;
+            }
+            .jb-local {
+                  background-attachment: local;
+            }
+
+      </style>
+</head>
+<body>
+      <h2>background-attachment</h2>
+      <p>background-attachment로 배경 이미지의 스크롤 여부를 정합니다.</p>
+      <h3>문법</h3>
+      <nav class="comment">background-attachment: scroll | fixed | local | initial | inherit</nav>
+      <ul>
+            <li>scroll : 선택한 요소와 같이 움직입니다. 내용을 스크롤하면 배경 이미지는 스크롤되지 않습니다.</li>
+            <li>fixed : 움직이지 않습니다.</li>
+            <li>local : 선택한 요소와 같이 움직입니다. 내용을 스크롤하면 배경 이미지도 스크롤됩니다.</li>
+            <li>initial : 기본값으로 설정합니다.</li>
+            <li>inherit : 부모 요소의 속성값을 상속받습니다.</li>
+      </ul>
+
+      <h2>예제</h2>
+      <div class="jb-scroll">
+            <p>scroll</p>
+            <ul>
+                  <li>One</li>
+                  <li>Two</li>
+                  <li>Three</li>
+                  <li>Four</li>
+                  <li>Five</li>
+                  <li>Six</li>
+                  <li>Seven</li>
+                  <li>Eight</li>
+                  <li>Nine</li>
+                  <li>Ten</li>
+            </ul>
+            </div>
+            <div class="jb-fixed">
+            <p>fixed</p>
+            <ul>
+                  <li>One</li>
+                  <li>Two</li>
+                  <li>Three</li>
+                  <li>Four</li>
+                  <li>Five</li>
+                  <li>Six</li>
+                  <li>Seven</li>
+                  <li>Eight</li>
+                  <li>Nine</li>
+                  <li>Ten</li>
+            </ul>
+            </div>
+            <div class="jb-local">
+            <p>local</p>
+            <ul>
+                  <li>One</li>
+                  <li>Two</li>
+                  <li>Three</li>
+                  <li>Four</li>
+                  <li>Five</li>
+                  <li>Six</li>
+                  <li>Seven</li>
+                  <li>Eight</li>
+                  <li>Nine</li>
+                  <li>Ten</li>
+            </ul>
+      </div>
+
+</body>
+</html>
+

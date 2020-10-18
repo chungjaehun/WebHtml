@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+
+
+            h1 {
+            font-family: Georgia;
+            font-style: italic;
+            padding: 10px;
+            }
+            .none {
+            border-style: none;
+            }
+            .hidden {
+            border-style: hidden;
+            }
+            .dotted {
+            border-style: dotted;
+            }
+            .dashed {
+            border-style: dashed;
+            }
+            .solid {
+            border-style: solid;
+            }
+            .double {
+            border-style: double;
+            }
+            .groove {
+            border-style: groove;
+            }
+            .ridge {
+            border-style: ridge;
+            }
+            .inset {
+            border-style: inset;
+            }
+            .outset {
+            border-style: outset;
+            }
+
+      </style>
+</head>
+<body>
+      <h2>border-style</h2>
+      <p>border-style은 테두리(border)의 모양을 정하는 속성입니다.</p>
+      <p>border-style은 border-top-style, border-right-style, border-bottom-style, border-left-style의 축약형입니다.</p>
+      <h3>문법</h3>
+      <nav class="comment">border-style:none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset | initial | inherit</nav>
+      <ul>
+            <li>initial : 기본값으로 설정합니다.</li>
+            <li>inherit : 부모 요소의 속성값을 상속받습니다.</li>
+      </ul>
+      <p>속성값은 한 개에서 네 개까지 정할 수 있습니다.</p>
+      <nav class="comment">border-style: xx</nav>
+      <p>모든 모서리의 모양을 xx로 만듭니다.</p>
+
+      <nav class="comment">border-style: xx yy</nav>
+      <p>위쪽과 아래쪽 모서리의 모양은 xx로, 왼쪽와 오른쪽의 모양은 yy로 만듭니다.</p>
+
+      <nav class="comment">border-style: xx yy zz</nav>
+      <p>위쪽 모양은 xx로, 왼쪽과 오른쪽의 모양은 yy로, 아래쪽의 모양은 zz로 만듭니다.</p>
+
+      <nav class="comment">border-style: xx yy zz ww</nav>
+      <p>위쪽 모양은 xx로, 오른쪽 모양은 yy로, 아래쪽의 모양은 zz로, 왼쪽 모양은 ww로 만듭니다.</p>
+
+      <h2>예제</h2>
+      <h1 class="none">No Border.</h1>
+      <h1 class="hidden">Hidden Border.</h1>
+      <h1 class="dotted">Dotted Border.</h1>
+      <h1 class="dashed">Dashed Border.</h1>
+      <h1 class="solid">Solid Border.</h1>
+      <h1 class="double">Double Border.</h1>
+      <h1 class="groove">Groove Border.</h1>
+      <h1 class="ridge">Ridge Border.</h1>
+      <h1 class="inset">Inset Border.</h1>
+      <h1 class="outset">Outset Border.</h1>
+
+</body>
+</html>
+
