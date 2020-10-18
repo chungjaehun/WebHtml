@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+
+            table { width: 100%; }
+            table, td { border: 1px solid #444444; }
+            .abc { caption-side: top; }
+            .xyz { caption-side: bottom; }
+
+      </style>
+</head>
+<body>
+      <h2>caption-side / 표(table)의 캡션의 위치를 정하는 속성</h2>
+      <p>caption-side는 표(table)의 캡션의 위치를 정하는 속성입니다.</p>
+      <h3>문법</h3>
+      <p>caption-side: top | bottom | initial | inherit</p>
+      <ul>
+            <li>top : 기본값입니다. 표의 위에 캡션을 위치시킵니다.</li>  
+            <li>bottom : 표의 아래에 캡션을 위치시킵니다.</li>  
+            <li>initial : 기본값으로 설정합니다.</li>  
+            <li>inherit : 부모 요소의 속성값을 상속받습니다.</li>  
+      </ul>
+
+      <p>Captionside Top</p>
+      <table>
+            <caption class="abc">caption-side: top;</caption>
+            <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor</td>
+            </tr>
+            <tr>
+                  <td>Sit</td>
+                  <td>Amet</td>
+                  <td>Elit</td>
+            </tr>
+      </table>
+      
+      <p>Captionside Bottom</p>
+      <table>
+            <caption class="xyz">caption-side: bottom;</caption>
+            <tr>
+                  <td>Lorem</td>
+                  <td>Ipsum</td>
+                  <td>Dolor</td>
+            </tr>
+            <tr>
+                  <td>Sit</td>
+                  <td>Amet</td>
+                  <td>Elit</td>
+            </tr>
+      </table>
+
+      
+</body>
+</html>
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+
+            .os {
+                  list-style-position: outside;
+            }
+            .is {
+                  list-style-position: inside;
+            }
+
+      </style>
+</head>
+<body>
+      <h2>list-style-position으로 ul, ol 등의 목록의 마커(marker)의 위치</h2>
+      <p>list-style-position으로 ul, ol 등의 목록의 마커(marker)의 위치를 정합니다.</p>
+      <h3>문법</h3>
+      <p>list-style-position: inside | outside | initial | inherit</p>
+      <ul>
+            <li>inside : 문단 안쪽에 놓습니다.</li>
+            <li>outside : 문단 바깥쪽에 놓습니다.</li>
+            <li>initial : 기본값으로 설정합니다.</li>
+            <li>inherit : 부모 요소의 속성값을 상속받습니다.</li>
+      </ul>
+
+      <h2>예제</h2>
+      
+      <p>list-style-position: outside;</p>
+      <ul class="os">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.</li>
+      </ul>
+      <p>list-style-position: outside;</p>
+      <ul class="is">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada.</li>
+      </ul>
+</body>
+</html>
+

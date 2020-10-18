@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            table, th, td {
+                  border: 1px solid #bcbcbc;
+            }
+
+            .table1 {
+                  width: 600px;
+            }
+
+            .table2{
+                  width: 100%;
+            }
+            .table2 th, .table2 td{
+                  height: 50px;
+            }
+
+            .table3{
+                  width: 80%;
+            }
+            .jb-th-1 {
+                  width: 400px;
+            }
+
+            .jb-th-2 {
+                  padding: 30px 50px;
+            }
+
+      </style>
+</head>
+<body>
+      <h2>표와 셀의 기본 크기</h2>
+      <p>표와 셀의 크기는 정해져있지 않습니다. 내용이 짧으면 작게, 내용이 길면 크게 표와 셀이 만들어집니다. 의도하지 않은 결과가 나오지 않게 하려면 크기를 정하는 게 좋습니다.</p>
+      <p>크기를 직접 정할 때 사용하는 속성은 width 속성과 height 속성입니다. 다음은 크기를 파악하기 위해 테두리만 추가한 간단한 표입니다. 여기에 스타일을 추가해서 크기를 변경해보도록 하겠습니다.</p>
+
+      <h3>기본 크기</h3>
+      <table>
+            <thead>
+                  <tr>
+                        <th>Lorem</th>
+                        <th>Ipsum</th>
+                        <th>Dolor</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+            </tbody>
+      </table>
+      <hr>
+
+      <h3>표 전체의 가로 크기를 600px로 정하고 싶다면 table 요소의 가로 크기를 width 속성으로 정합니다.</h3>
+      <table class="table1">
+            <thead>
+                  <tr>
+                        <th>Lorem</th>
+                        <th>Ipsum</th>
+                        <th>Dolor</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+            </tbody>
+      </table>
+      <hr>
+
+      <h3>가로로 꽉 찬 표를 만들고 싶다면 크기의 값을 100%, 높이를 50px 합니다.</h3>
+      <table class="table2">
+            <thead>
+                  <tr>
+                        <th>Lorem</th>
+                        <th>Ipsum</th>
+                        <th>Dolor</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+            </tbody>
+      </table>
+      <hr>
+
+      <h3>셀의 가로 크기</h3>
+      <p>셀의 가로 크기를 정하고 싶다면 th 또는 td 요소의 가로 크기를 width 속성으로 정합니다. 가로 크기를 정하면 같은 열에 있는 모든 셀의 가로 크기가 같이 바뀝니다.</p>
+      <table class="table3">
+            <thead>
+                  <tr>
+                        <th class="jb-th-1">Lorem</th>
+                        <th>Ipsum</th>
+                        <th>Dolor</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+            </tbody>
+      </table>
+      <hr>
+
+      <h3>안쪽 여백으로 셀의 크기 정하기</h3>
+      <p>padding 속성으로 셀의 크기를 변경할 수 있습니다.</p>
+      <table class="table4">
+            <thead>
+                  <tr>
+                        <th class="jb-th-2">Lorem</th>
+                        <th>Ipsum</th>
+                        <th>Dolor</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+            </tbody>
+      </table>
+      <hr>
+</body>
+</html>
+
