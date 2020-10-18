@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            .jb {
+                  columns : 3;
+            }
+            .jb1 {
+          	      columns : 200px;
+            }
+            .jb2 {
+          	      columns : 100px 10;
+            }
+      </style>
+</head>
+<body>
+      <h3>columns는 다단으로 만드는 속성입니다.</h3>
+      <ul>
+            <li>단의 최소 가로 크기와 단의 최대 개수가 속성의 값입니다.</li>
+            <li>기본값은 auto로, 값을 입력하지 않으면 auto로 처리합니다.</li>
+      </ul>
+      <hr>
+
+      <h3>예제 1</h3>
+            <ul>
+                  <li>문단을 3단으로 만듭니다.</li>
+                  <li>단의 최소 가로 크기가 설정되지 않았으므로 균등한 크기로 단이 만들어집니다.</li>
+            </ul>
+
+            <p class="jb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus.</p>
+      <hr>
+      <h3>예제 2</h3>
+            <ul>
+                  <li>단의 최소 가로 크기를 200px로 하면, 균등한 크기로 분할했을 때 200px 보다 크면서 200px에 가장 가까운 가로 크기를 갖도록 단의 개수가 정해집니다.</li>
+                  <li>웹브라우저의 가로 크기를 늘리면 단의 개수가 늘어납니다.</li>
+            </ul>
+
+            <p class="jb1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus.</p>
+      <hr>
+      <h3>예제 3</h3>
+      <ul>
+            <li>단의 최소 가로 크기를 100px, 단의 최대 개수를 10개로 정했습니다.</li>
+            <li>웹브라우저의 가로 크기를 늘리면 단의 개수가 늘어나지만, 10개를 넘지는 않습니다.</li>
+      </ul>
+
+      <p class="jb2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus.</p>
+
+</body>
+</html>
+

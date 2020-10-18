@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            table {
+                  width: 100%;
+                  border: 1px solid #333333;
+            }
+            td {
+                  padding: 10px;
+                  border: 1px solid #333333;
+            }
+            .a {
+                  border-spacing: 0px;
+            }
+            .b {
+                  border-spacing: 5px;
+            }
+            .c {
+                  border-spacing: 10px;
+            }
+            .d {
+                  border-spacing: 5px 10px;
+            }
+      </style>
+</head>
+<body>
+      <h2>border-collapse</h2>
+      <p>border-collapse는 표(table)의 테두리와 셀(td)의 테두리 사이의 간격을 어떻게 처리할 지정합니다.</p>
+      <ul>
+            <li>separate : 표(table)의 테두리와 셀(td)의 테두리 사이에 간격을 둡니다.</li>
+            <li>collapse : 표(table)의 테두리와 셀(td)의 테두리 사이의 간격을 없앱니다. 겹치는 부분은 한 줄로 나타냅니다.</li>
+            <li>initial : 기본값으로 설정합니다.</li>
+            <li>inherit : 부모 요소의 속성값을 상속받습니다.</li>
+            <li>속성값이 separate일 때, 간격의 크기는 border-spacing 속성으로 정합니다.</li>
+      </ul>
+      
+      <h3>Border Spacing : Default</h3>
+      <table>
+                  <tr>
+                  <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+                  </tr>
+                  <tr>
+                  <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+                  </tr>
+      </table>
+      <h3>Border Spacing : 0px</h3>
+      <table class="a">
+                  <tr>
+                  <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+                  </tr>
+                  <tr>
+                  <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+                  </tr>
+      </table>
+      <h3>Border Spacing : 5px</h3>
+      <table class="b">
+                  <tr>
+                  <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+                  </tr>
+                  <tr>
+                  <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+                  </tr>
+      </table>
+      <h3>Border Spacing : 10px</h3>
+      <table class="c">
+                  <tr>
+                  <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+                  </tr>
+                  <tr>
+                  <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+                  </tr>
+      </table>
+      <h3>Border Spacing : 5px 10px</h3>
+      <table class="d">
+                  <tr>
+                  <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+                  </tr>
+                  <tr>
+                  <td>Lorem</td><td>Ipsum</td><td>Dolor</td>
+                  </tr>
+      </table>
+
+     
+</body>
+</html>
+

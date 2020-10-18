@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            table, th, td {
+                  border: 1px solid #bcbcbc;
+            }
+            table {
+                  width: 400px;
+                  height: 200px;
+            }
+            .posi1{
+                  margin-left: auto;
+                  margin-right: auto;
+            }
+            .posi2{
+                  margin-left: auto;
+                  /* float:right; */
+            }
+            .th1 {
+                  text-align: left;
+            }
+            .td1 {
+                  text-align: right;
+            }
+            .td2 {
+                  text-align: center;
+            }
+            .ver-top{
+                  vertical-align: top;
+            }
+                        
+            .ver-bottom {
+                  vertical-align: bottom;
+            }
+            .ver-middle {
+                  vertical-align:middle;
+            }
+
+      </style>
+</head>
+<body>
+      <h3>표와 관련된 정렬</h3>
+      <p>표와 관련된 정렬에는 표 정렬, 셀 안의 내용 가로 정렬, 셀 안의 내용 세로 정렬이 있습니다. 기본 모양은 입니다.</p>
+      <ul>
+            <li>표 : 왼쪽 정렬</li>
+            <li>제목 셀(th) 안의 내용 가로 정렬 : 가운데 정렬</li>
+            <li>셀 안의 내용 세로 정렬 : 가운데 정렬</li>
+      </ul>
+      <table>
+            <thead>
+                  <tr>
+                        <th>Lorem</th>
+                        <th>Ipsum</th>
+                        <th>Dolor</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+            </tbody>
+      </table>
+      <hr>
+      <table class="posi1">
+            <thead>
+                  <tr>
+                        <th>Lorem</th>
+                        <th>Ipsum</th>
+                        <th>Dolor</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+            </tbody>
+      </table>
+      <hr>
+      <div>
+      <table class="posi2">
+            <thead>
+                  <tr>
+                        <th>Lorem</th>
+                        <th>Ipsum</th>
+                        <th>Dolor</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+                  <tr>
+                        <td>Lorem</td>
+                        <td>Ipsum</td>
+                        <td>Dolor</td>
+                  </tr>
+            </tbody>
+      </table>
+      </div>
+      <hr>
+      <table class="posi1">
+            <thead>
+                  <tr>
+                        <th class="th1 ver-top">Lorem</th>
+                        <th class="th1 ver-middle">Ipsum</th>
+                        <th class="th1 ver-bottom">Dolor</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td class="td1 ver-top">Lorem</td>
+                        <td class="td1 ver-middle">Ipsum</td>
+                        <td class="td1 ver-bottom">Dolor</td>
+                  </tr>
+                  <tr>
+                        <td class="td2 ver-top">Lorem</td>
+                        <td class="td2 ver-middle">Ipsum</td>
+                        <td class="td2 ver-bottom">Dolor</td>
+                  </tr>
+            </tbody>
+      </table>
+
+</body>
+</html>
+
