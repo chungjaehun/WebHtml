@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Tips | Dropdown Menu</title>
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+            blockquote {
+                  border: 1px solid #27a9e3;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 10px solid #27a9e3;
+            }
+
+            div {
+                  width: 400px;
+                  border: 2px solid red;
+            }
+            .max-size {
+                  max-width: 100%;
+            }  
+            .max-size1 {
+                  max-width: 100%;
+                  height: auto;
+            }
+            .max-size2 {
+                  max-width: 100%;
+                  height: auto !important;
+            }     
+      </style>
+</head>
+<body>
+      <h2>CSS / max-width, height로 반응형 웹디자인을 위한 이미지 스타일링 하기</h2>
+      <p>반응형 웹디자인은 웹브라우저의 가로폭에 따라 레이아웃이 변하고, 그에 따라 각 요소의 가로폭도 변합니다. 텍스트는 일반적으로 바뀐 폭에 맞추어 줄바꿈이 되지만, 이미지는 줄바꿈이라는 게 없기 때문에 문제가 생깁니다. 어떤 문제가 발생하는지 살펴보고 해결책을 찾아보겠습니다.</p>
+      <blockquote>
+            <p>이미지 크기를 정하지 않은 경우</p>
+      </blockquote>
+      <p>이미지의 크기를 정하지 않으면 부모 요소보다 큰 이미지는 부모 요소를 벗어나서 나타납니다.</p>
+      <div>
+            <img src="/imags/PipeRack.jpg" alt="">
+      </div>
+      <hr>
+      <p>이를 해결하는 방법은 max-width 속성을 부여하는 것입니다.</p>
+<pre class ="comment">
+img {
+      max-width: 100%;
+}
+</pre>
+      <p>최대 크기를 부모 요소의 크기로 제한하는 것입니다. 가로 세로 비율에 맞게 크기가 줄어듭니다.</p>
+      <div>
+            <img class="max-size" src="/imags/PipeRack.jpg" alt="">
+      </div>
+      <hr>
+
+      <blockquote>
+            <p>이미지 크기를 attribute로 설정한 경우</p>
+      </blockquote>
+      <p>이미지 크기가 attribute로 설정되어 있으면 max-width 속성을 추가했을 때 가로폭은 줄어들지만 높이는 줄어들지 않습니다. 그래서 원본과 가로 세로 비율이 맞지 않는 문제가 발생합니다.</p>
+      <nav class="comment">
+            &lt;img src="images/image-600x450.jpg" alt="" width="600" height="450"&gt;
+      </nav>
+      <div>
+            <img class="max-size1" src="/imags/PipeRack.jpg" alt="">
+      </div>
+
+      <p>이를 해결하는 방법은 height 속성값을 auto로 지정해주는 것입니다. 원본 비율에 맞게 높이가 조정됩니다.</p>
+      <pre class ="comment">
+img {
+      max-width: 100%;
+      height: auto;
+}
+      </pre>
+      <blockquote>
+            <p>이미지 크기를 inline style로 정한 경우</p>
+      </blockquote>
+      <p>좋은 방법은 아니지만, 이미지 크기를 inline style로 정하는 경우가 있습니다. 예를 들어 다음처럼 크기를 정하는 것이죠.</p>
+      <nav class="comment">
+            &lt;img src="images/image-600x450.jpg" alt="" width="600" height="450"&gt;
+      </nav>
+      <p>가로폭은 조정되나 높이가 변하지 않아 비율이 맞지 않게 됩니다. 이런 경우 height 속성 값에 !important를 추가합니다.</p>
+      <pre class ="comment">
+img {
+      max-width: 100%;
+      height: auto;
+}
+      </pre>      
+      <div>
+            <img class="max-size2" src="/imags/PipeRack.jpg" alt="">
+      </div>
+
+</body>
+</html>

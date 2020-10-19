@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Tips | Dropdown Menu</title>
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+            blockquote {
+                  border: 1px solid #27a9e3;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 10px solid #27a9e3;
+            }
+            .dropdown > ul > li {
+                  display: inline-block;
+                  position: relative;
+            }
+            .dropdown > ul > li > ul {
+                  position: absolute;
+                  list-style-type: none;
+                  padding-left: 0px;
+                  display: none;
+            }
+            .dropdown > ul > li:hover > ul {
+                  display: block;
+            }
+
+      </style>
+</head>
+<body>
+      <h2>Dropdown 메뉴 만들기</h2>
+      <p>CSS만으로 만든 드롭다운 메뉴입니다. Ipsum, Dolor에 마우스를 올리면 하위 메뉴가 나옵니다.</p>
+
+      <div class="dropdown">
+            <ul>
+                  <li>
+                  <a href="#">Lorem</a>
+                  </li>
+                  <li>
+                  <a href="#">Ipsum</a>
+                  <ul>
+                        <li><a href="#">Consectetur</a></li>
+                        <li><a href="#">Amet</a></li>
+                  </ul>
+                  </li>
+                  <li>
+                  <a href="#">Dolor</a>
+                  <ul>
+                        <li><a href="#">Adipiscing</a></li>
+                        <li><a href="#">Elit</a></li>
+                  </ul>
+                  </li>
+            </ul>
+      </div>
+</body>
+</html>

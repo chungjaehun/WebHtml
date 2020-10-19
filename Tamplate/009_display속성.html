@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+            blockquote {
+                  border: 1px solid #27a9e3;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 10px solid #27a9e3;
+            }
+            li {
+                  display: inline;
+                  border: 1px solid #bcbcbc;
+                  padding: 10px;
+            }
+            .li1 {
+                  display: inline;
+                  border: 1px solid #bcbcbc;
+                  padding: 10px;
+                  margin-right: -4px;
+            }
+            .ul2{
+                  font-size:0; 
+            }
+            .li2 {
+                  display: inline;
+                  border: 1px solid #bcbcbc;
+                  padding: 10px;
+                  font-size: 16px;;
+            }
+            .ul3 {
+                  list-style-type: none;
+            }
+            .li3 {
+                  float: left;
+                  border: 1px solid #bcbcbc;
+                  padding: 10px;
+            }
+      </style>
+</head>
+<body>
+      <h2>inline 또는 inline-block의 여백</h2>
+      <p>display 속성값으로 inline 또는 inline-block으로 정하면 요소들이 가로로 배열됩니다. 이 때 요소와 요소 사이에 여백이 생깁니다. 예를 들어 다음과 같이 순서 없는 목록을 가로로 배열해보겠습니다.(여백을 파악하기 위해 테두리를 만들었습니다.)</p>
+      
+      <ul>
+            <li>Lorem</li>
+            <li>Ipsum</li>
+            <li>Dolor</li>
+      </ul>
+      <p>박스 오른쪽에 여백이 있는데, li 요소에</p>
+      <nav class="comment">margin-right: 0px;</nav>
+      <p>를 추가해도 사라지지 않습니다. 이 여백을 없애는 방법 두 가지를 소개합니다.</p>
+      <blockquote>
+            <p>margin 이용하기</p>
+      </blockquote>
+      <p>첫번째 방법은 margin 값을 음수로 하는 것입니다. -4px 정도면 여백이 사라집니다.</p>
+      <pre class="comment">
+li {
+      display: inline;
+      border: 1px solid #bcbcbc;
+      padding: 10px;>
+      margin-right: -4px;
+}
+      </pre>
+      <ul>
+            <li class="li1">Lorem</li>
+            <li class="li1">Ipsum</li>
+            <li class="li1">Dolor</li>
+      </ul>
+
+      <blockquote>
+            <p>글자 크기 조정하기</p>
+      </blockquote>
+      <p>두번째 방법은 글자 크기를 조정하는 것입니다. 상위 요소의 글자 크기를 0으로 만든 다음 li 요소의 글자 크기를 원래대로 만듭니다.</p>
+      <pre class="comment">
+ul {
+      font-size: 0;
+}
+li {
+      display: inline;
+      border: 1px solid #bcbcbc;
+      padding: 10px;
+      font-size: 16px;
+}
+      </pre>
+      <ul class="ul2">
+            <li class="li2">Lorem</li>
+            <li class="li2">Ipsum</li>
+            <li class="li2">Dolor</li>
+      </ul>
+
+      <p>이 때 ul 요소의 여백도 바뀐다는 것에 주의해야 합니다.</p>      
+      <blockquote>
+            <p>참조</p>
+      </blockquote>
+      <p>display 속성 대신 float 속성을 사용하면 여백이 생기지 않습니다.</p>
+      <pre class="comment">
+ul {
+  list-style-type: none;
+}
+li {
+  float: left;
+  border: 1px solid #bcbcbc;
+  padding: 10px;
+}
+      </pre> 
+      <ul class="ul3">
+            <li class="li3">Lorem</li>
+            <li class="li3">Ipsum</li>
+            <li class="li3">Dolor</li>
+      </ul>
+
+
+</body>
+</html>

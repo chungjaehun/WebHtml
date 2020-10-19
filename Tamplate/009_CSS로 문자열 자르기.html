@@ -35,26 +35,80 @@
                   padding-right: 20px;
                   border-left: 10px solid #27a9e3;
             }
+
             p.a {
                   font-family: sans-serif;
                   font-size: 20px;
             }
+            p.b {
+                  font-family: sans-serif;
+                  font-size: 20px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+            }
+
+            p.c {
+                  font-family: sans-serif;
+                  font-size: 16px;
+                  line-height: 1.6;
+            }
+
+            p.d {
+                  font-family: sans-serif;
+                  font-size: 16px;
+                  line-height: 1.6;
+                  max-height: 4.8em;
+                  overflow: hidden;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 3;
+                  -webkit-box-orient: vertical;
+            }
       </style>
 </head>
 <body>
-      <h2>반응형 레이아웃 만들기</h2>
+      <h2>CSS로 문자열 자르기- 한줄인 경우, 여러 줄인 경우</h2>
       <p>웹페이지에 출력하는 문자열의 길이는 서버단에서 조절하는 게 보통입니다. 하지만, 어떤 경우에는 그게 불가능할 수 있습니다. 이미 전송 받은 문자열을 잘라야 하는 상황이 생길 수 있습니다. CSS를 이용하여 문자열의 일부만 보여주는 방법을 소개해드립니다.</p>
       
       <blockquote>
             <h3>한 줄인 경우</h3>
       </blockquote>
-      <h3>문자열이 길면 다음처럼 화면 끝에서 줄바꿈되는 것이 기본 모양입니다.</h3>    
+      <p>문자열이 길면 다음처럼 화면 끝에서 줄바꿈되는 것이 기본 모양입니다.</p>    
       <p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet.</p>
       <hr>
       
       <h3>줄바꿈 되지 않게 하기</h3>
       <p>white-space 속성으로 줄바꿈이 되지 않도록 합니다.</p>
       <nav class="comment">white-space: nowrap;</nav>
+      <p>화면 크기를 벗어나므로 가로 스크롤바가 생깁니다.</p>
+
+      <h3>화면을 벗어난 문자열 보이지 않게 하기</h3>
+      <p>overflow 속성으로 화면을 벗어난 문자열이 보이지 않게 합니다.</p>
+      <nav class="comment">overflow: hidden;</nav>
+
+      <h3>말줄임표 넣기</h3>
+      <p>text-overflow 속성으로 말줄임표를 넣습니다.</p>
+      <nav class="comment">text-overflow: ellipsis;</nav>
+      <p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet.</p>
+
+      <blockquote>
+            <h3>여러 줄인 경우</h3>
+      </blockquote>
+      <p>글자 크기 16px, 줄 높이 1.6으로 설정한 긴 문자열입니다. 세 줄만 나오도록 만들어보겠습니다.</p>
+      <p class="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <h3>높이 정하고 숨기기</h3>
+      <p>요소의 최대 높이를 줄 높이의 3배인 4.8em으로 정합니다. 그리고 넘치는 부분은 숨깁니다.</p>
+      <nav class="comment">max-height: 4.8em;<br>overflow: hidden;</nav>
       
+      <h3>말줄임표 추가하기</h3>
+      <p>다음 코드를 추가하여 말 줄임표를 넣습니다. 세 줄을 보이게 할 것이므로 -webkit-line-clamp의 값은 3입니다.</p>
+      <nav class="comment">
+            display: -webkit-box;<br>
+            -webkit-line-clamp: 3;<br>
+            -webkit-box-orient: vertical;
+      </nav>
+      <p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
 </body>
 </html>

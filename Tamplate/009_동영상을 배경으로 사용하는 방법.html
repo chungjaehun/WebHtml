@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:18px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+
+            blockquote {
+                  border: 1px solid #27a9e3;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 10px solid #27a9e3;
+            }
+
+            body { padding: 0px; margin: 0px; }
+            .jb-box { width: 100%; height: 500px; overflow: hidden;margin: 0px auto; position: relative; }
+            video { width: 100%; }
+            .jb-text { position: absolute; top: 50%; width: 100%; }
+            .jb-text p { margin-top: -24px; text-align: center; font-size: 48px; color: #ffffff; }
+      </style>
+</head>
+<body>
+      <h2>동영상을 배경으로 사용하는 방법</h2>
+      <p>동영상을 배경으로 사용하면 좀 더 다이나믹하고 화려하게 웹페이지를 꾸밀 수 있습니다. 단, 네트워크 속도가 느리거나 컴퓨터 사양이 좋지 않거나 구 버전의 웹브라우저를 사용하면 문제가 생길 수 있으니, 신중히 결정하는 것이 좋습니다.</p>
+      <p>다음은 간단하게 만든 예제의 전체 코드입니다. 동영상 파일은 videos 폴더에 넣었다고 가정하겠습니다.</p>
+
+      <div class="jb-box">
+            <video muted autoplay loop>
+                  <source src="/videos/istockphoto-1167621882-640_adpp_is.mp4" type="video/mp4">
+                  <strong>Your browser does not support the video tag.</strong>
+            </video>
+            <div class="jb-text">
+                  <p>Lorem Ipsum Dolor</p>
+            </div>
+      </div>
+
+      <blockquote>
+            <p>분석</p>
+      </blockquote>
+      <ul>
+            <li>video 태그로 동영상을 넣습니다. 자동으로 시작하고, 반복되도록 합니다.</li>
+            <li>동영상 위에 들어갈 텍스트를 만듭니다.</li>
+            <li>동영상과 텍스트를 div 태그로 묶습니다.</li>
+      </ul>
+      <nav class="comment">body { padding: 0px; margin: 0px; }</nav>
+      <p>웹페이지에 여백이 없게 만듭니다.</p>
+
+      <nav class="comment">.jb-box { width: 100%; height: 500px; overflow: hidden;margin: 0px auto; position: relative; }</nav>
+      <p>동영상이 정해진 높이를 벗어나면 보이지 않도록 overflow 속성을 정합니다.</p>
+      <p>텍스트를 동영상 위에 올릴 수 있도록 position 속성을 설정합니다.</p>
+
+      <nav class="comment">video { width: 100%; }</nav>
+      <p>동영상이 좌우로 꽈 차게 나오도록 width를 정합니다.</p>
+
+      <nav class="comment">.jb-text { position: absolute; top: 50%; width: 100%; }</nav>
+      <p>텍스트가 동영상 위로 올라가도록 position 속성을 정합니다.</p>
+
+      <nav class="comment">.jb-text p { margin-top: -24px; text-align: center; font-size: 48px; color: #ffffff; }</nav>
+      <p>텍스트가 세로 가운데 나오도록 의 위치를 조정하고, 모양을 정합니다.</p>
+
+    
+</body>
+</html>
+
