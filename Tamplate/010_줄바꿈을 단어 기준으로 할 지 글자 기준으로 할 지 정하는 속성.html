@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Tips | Dropdown Menu</title>
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:16px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+            blockquote {
+                  border: 1px solid #27a9e3;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 10px solid #27a9e3;
+            }
+
+            body {
+                  font-family: sans-serif;
+            }
+            .a {
+                  word-break: normal;
+            }
+            .b {
+                  word-break: break-all;
+            }
+            .c {
+                  word-break: keep-all;
+            }
+            span {
+                  color: red;
+            }
+
+      </style>
+</head>
+<body>
+      <h2>word-break / 줄바꿈을 단어 기준으로 할 지 글자 기준으로 할 지 정하는 속성</h2>
+      
+      <blockquote>
+            <p>개요</p>
+      </blockquote>
+      <p>word-break는 줄바꿈을 할 때 단어 기준으로 할 지 글자 기준으로 할 지 정하는 속성은 입니다.</p>
+
+      <blockquote>
+            <p>문법</p>
+      </blockquote>
+      <nav class="comment">word-break: normal | break-all | keep-all | initial | inherit;</nav>
+      <ul>
+            <li>normal : CJK 문자는 글자 기준으로, CJK 이외의 문자는 단어 기준으로 줄바꿈합니다.</li>
+            <li>break-all : 글자 기준으로 줄바꿈합니다.</li>
+            <li>keep-all : 단어 기준으로 줄바꿈합니다.</li>
+            <li>initial : 기본값으로 설정합니다.</li>
+            <li>inherit : 부모 요소의 속성값을 상속받습니다.</li>
+      </ul>
+      <p>반응형 웹디자인의 경우 가로 크기가 작을 때를 대비해서 word-break의 속성값을 break-all로 정하는 것이 좋습니다.</p>
+
+      <blockquote>
+            <p>예제 1</p>
+      </blockquote>
+      <h1>normal</h1>
+      <p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean necmollisnulla. <span>Phaselluslaciniatempusmauriseulaoreet.</span> Proin gravida velit dictum dui consequat malesuada.</p>
+      <h1>break-all</h1>
+      <p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean necmollisnulla. <span>Phaselluslaciniatempusmauriseulaoreet.</span> Proin gravida velit dictum dui consequat malesuada.</p>
+      <h1>keep-all</h1>
+      <p class="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean necmollisnulla. <span>Phaselluslaciniatempusmauriseulaoreet.</span> Proin gravida velit dictum dui consequat malesuada.</p>
+
+      <blockquote>
+            <p>예제 2</p>
+      </blockquote>
+      <h1>normal</h1>
+      <p class="a">찬미를 위하여 그들은 열매를 되는 길지 교향악이다. 같이, 뜨고, <span>용기가얼마나청춘의청춘의사막이다.</span> 청춘은 웅대한 스며들어 평화스러운 오직 쓸쓸하랴? 인간의 우리의 이상은 하는 힘차게 봄바람이다. 구하기 구하지 눈이 가는 있다.</p>
+      <h1>break-all</h1>
+      <p class="b">찬미를 위하여 그들은 열매를 되는 길지 교향악이다. 같이, 뜨고, <span>용기가얼마나청춘의청춘의사막이다.</span> 청춘은 웅대한 스며들어 평화스러운 오직 쓸쓸하랴? 인간의 우리의 이상은 하는 힘차게 봄바람이다. 구하기 구하지 눈이 가는 있다.</p>
+      <h1>keep-all</h1>
+      <p class="c">찬미를 위하여 그들은 열매를 되는 길지 교향악이다. 같이, 뜨고, <span>용기가얼마나청춘의청춘의사막이다.</span> 청춘은 웅대한 스며들어 평화스러운 오직 쓸쓸하랴? 인간의 우리의 이상은 하는 힘차게 봄바람이다. 구하기 구하지 눈이 가는 있다.</p>
+
+
+</body>
+</html>

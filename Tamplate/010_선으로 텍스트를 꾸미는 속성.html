@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Tips | Dropdown Menu</title>
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:16px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+            blockquote {
+                  border: 1px solid #27a9e3;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 10px solid #27a9e3;
+            }
+
+            .a {text-decoration: none;}
+            .b {text-decoration: line-through;}
+            .c {text-decoration: overline;}
+            .d {text-decoration: underline;}
+            .e {text-decoration: overline underline;}
+            .f {text-decoration: overline underline line-through;}
+
+      </style>
+</head>
+<body>
+      <h2>text-decoration / 선으로 텍스트를 꾸미는 속성</h2>
+      
+      <blockquote>
+            <p>개요</p>
+      </blockquote>
+      <p>text-decoration은 선으로 텍스트를 꾸밀 수 있게 해주는 속성입니다.</p>
+
+      <blockquote>
+            <p>문법</p>
+      </blockquote>
+      <nav class="comment">text-decoration: none | line-through | overline | underline | initial | inherit</nav>
+      <ul>
+            <li>none : 선을 만들지 않습니다.</li>
+            <li>line-through : 글자 중간에 선을 만듭니다.</li>
+            <li>overline : 글자 위에 선을 만듭니다.</li>
+            <li>underline : 글자 아래에 선을 만듭니다.</li>
+            <li>initial : 기본값으로 설정합니다.</li>
+            <li>inherit : 부모 요소의 속성값을 상속받습니다.</li>
+      </ul>
+      <p>속성값을 여러개 사용하여 여러 선을 만들 수 있습니다. 예를 들어</p>
+      <nav class="comment">text-decoration: overline underline;</nav>
+      <p>는 글자 위와 아래에 선을 만듭니다.</p>
+
+      <blockquote>
+            <p>예제</p>
+      </blockquote>
+
+      <p class="a">text-decoration: none;</p>
+      <p class="b">text-decoration: line-through;</p>
+      <p class="c">text-decoration: overline;</p>
+      <p class="d">text-decoration: underline;</p>
+      <p class="e">text-decoration: overline underline;</p>
+      <p class="f">text-decoration: overline underline line-through;</p>
+  
+</body>
+</html>

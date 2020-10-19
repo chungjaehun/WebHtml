@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Tips | Dropdown Menu</title>
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:16px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+            blockquote {
+                  border: 1px solid #27a9e3;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 10px solid #27a9e3;
+            }
+
+            p {
+                  font-family: Consolas;
+                  font-size: 16px;
+            }
+            .t {
+                  font-weight: bold;
+                  color: #009688;
+            }
+            .a {
+                  white-space: normal;
+            }
+            .b {
+                  white-space: nowrap;
+            }
+            .c {
+                  white-space: pre;
+            }
+            .d {
+                  white-space: pre-wrap;
+            }
+            .e {
+                  white-space: pre-line;
+            }
+
+      </style>
+</head>
+<body>
+      <h2>white-space / 공백 처리 방법 정하는 속성</h2>
+      
+      <blockquote>
+            <p>개요</p>
+      </blockquote>
+      <p>white-space는 스페이스와 탭, 줄바꿈, 자동줄바꿈을 어떻게 처리할지 정하는 속성입니다.</p>
+
+      <blockquote>
+            <p>문법</p>
+      </blockquote>
+      <nav class="comment">white-space: normal | nowrap | pre | pre-wrap | pre-line | initial | inherit</nav>
+      <ul>
+            <li>normal, nowrap, pre, pre-wrap, pre-line : 아래 표 참고</li>
+            <li>initial : 기본값으로 설정합니다.</li>
+            <li>inherit : 부모 요소의 속성값을 상속받습니다.</li>
+      </ul>
+      <img src="/imags/write-space.png">
+
+      <ol>
+            <li>연속된 스페이스와 탭의 처리 방법입니다. 병합은 1개의 공백으로 바꾸는 것이고, 보존은 입력된 그대로 출력하는 것입니다.</li>
+            <li>줄바꿈의 처리방법입니다. 병합은 1개의 공백으로 바꾸는 것이고, 보존은 입력된 그대로 출력하는 것입니다.</li>
+            <li>내용이 영역의 크기를 벗어날 때 처리방법입니다. O는 자동으로 줄바꿈하여 영역 내에 내용을 표시하는 것이고, X는 영역을 벗어나더라도 입력된 대로 출력하는 것입니다.</li>
+      </ol>
+
+      <blockquote>
+            <p>예제</p>
+      </blockquote>
+
+      <p class="t">white-space: normal;</p>
+      <p class="a">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+      <p class="t">white-space: nowrap;</p>
+      <p class="b">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+      <p class="t">white-space: pre;</p>
+      <p class="c">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+      <p class="t">white-space: pre-wrap;</p>
+      <p class="d">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+      <p class="t">white-space: pre-line;</p>
+      <p class="e">    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Nunc viverra lectus in nisl convallis, id mattis tortor ultrices. Quisque a justo non nisl maximus pretium quis sit amet tortor.</p>
+  
+</body>
+</html>
