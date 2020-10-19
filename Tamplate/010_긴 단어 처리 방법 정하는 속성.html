@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Tips | Dropdown Menu</title>
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:16px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+            blockquote {
+                  border: 1px solid #27a9e3;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 10px solid #27a9e3;
+            }
+
+            .p {
+                  width: 400px;
+                  padding: 10px;
+                  background-color: #dddddd;
+            }
+            .a {
+                  word-break: keep-all;
+                  word-wrap: normal;
+            }
+            .b {
+                  word-break: keep-all;
+                  word-wrap: break-word;
+            }
+            .c {
+                  word-break: break-all;
+                  word-wrap: normal;
+            }
+            .d {
+                  word-break: break-all;
+                  word-wrap: break-word;
+            }
+
+      </style>
+</head>
+<body>
+      <h2>word-wrap / 긴 단어 처리 방법 정하는 속성</h2>
+      
+      <blockquote>
+            <p>개요</p>
+      </blockquote>
+      <p>word-wrap으로 띄어쓰기가 없는 긴 단어를 어떻게 처리할지 정합니다.
+
+      </p>
+
+      <blockquote>
+            <p>문법</p>
+      </blockquote>
+      <nav class="comment">word-wrap: normal | break-word | initial | inherit</nav>
+      <ul>
+            <li>normal : break point에서 줄바꿈합니다.</li>
+            <li>break-word : 요소의 경계에서 break point가 아니어도 줄바꿈을 합니다.</li>
+            <li>initial : 기본값으로 설정합니다.</li>
+            <li>inherit : 부모 요소의 속성값을 상속받습니다.</li>
+      </ul>
+      <p>word-break 속성의 값이 keep-all이면 단어가, break-all이면 글자가 break-point입니다.</p>
+
+
+      <blockquote>
+            <p>예제</p>
+      </blockquote>
+      <h1>normal</h1>
+      <p class="a p">loremipsumdolorloremipsumdolorloremipsumdolorloremipsumdolorloremipsumdolor</p>
+      <p class="b p">loremipsumdolorloremipsumdolorloremipsumdolorloremipsumdolorloremipsumdolor</p>
+      <p class="c p">loremipsumdolorloremipsumdolorloremipsumdolorloremipsumdolorloremipsumdolor</p>
+      <p class="d p">loremipsumdolorloremipsumdolorloremipsumdolorloremipsumdolorloremipsumdolor</p>
+      
+
+</body>
+</html>
