@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Tips | Dropdown Menu</title>
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:16px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+            blockquote {
+                  border: 1px solid #27a9e3;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 10px solid #27a9e3;
+            }
+
+            .a {
+                  float: right;
+                  width: 200px;
+                  height: 200px;
+                  background-color: rgba( 0,0,0,0.5);
+                  margin: 0px 0px 10px 10px;
+            }
+            .b {
+                  background-color: #dadada;
+            }
+            .b1 {
+                  background-color: #dadada;
+                  overflow: auto;
+            }
+      </style>
+</head>
+<body>
+      <h2>float와 overflow</h2>
+      <blockquote>
+            <p>float</p>
+      </blockquote>
+      <p>float는 요소를 왼쪽 또는 오른쪽에 배치할 때 유용한 속성입니다. float 속성을 부여한 요소의 다음 요소는 float 속성을 부여한 요소가 차지하는 위치만 제외하고 나머지 공간을 채우게 됩니다. 사진을 왼쪽 또는 오른쪽에 배치하고 그 주위를 텍스트로 채울 때 사용하거나, 사이트 레이아웃을 만들 때 사용합니다.</p>
+      
+      <blockquote>
+            <p>overflow</p>  
+      </blockquote>
+      <p>overflow는 내용이 요소의 크기를 벗어났을 때 어떻게 처리할지를 정하는 속성입니다. 내용이 주어진 공간에 다 들어가지 않을 때, 보여주게 할 수도 있고, 안 보이게 할 수도 있고, 스크롤바를 만들게 할 수도 있습니다.</p>
+
+      <blockquote>
+            <p>float와 overflow</p>
+      </blockquote>
+      <p>float와 overflow가 만나면 특이한 결과가 만들어집니다. 다음은 float 속성만 있을 때의 모양입니다.</p>
+
+      <div class="a"></div>
+      <div class="b">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in arcu a nisl convallis mollis et sit amet nulla. Nulla vestibulum dapibus eros vel imperdiet. Donec nec fringilla urna. Donec vel viverra nulla. Suspendisse mi leo, venenatis at magna efficitur, efficitur malesuada lorem. Etiam semper velit iaculis turpis maximus interdum. Fusce commodo dolor a faucibus mattis. Maecenas ac aliquet ex. Aliquam sagittis justo et risus facilisis porta. Vestibulum euismod at risus gravida sodales. Maecenas tincidunt accumsan fringilla. Aliquam imperdiet finibus justo, vel pulvinar mauris suscipit sed. Sed nec arcu nec lorem dignissim lacinia tempus sit amet elit. Vestibulum ac aliquam sem. Etiam aliquam nibh vel libero rhoncus consectetur. Ut scelerisque velit in tortor accumsan convallis. Donec quis lobortis magna, id venenatis mauris. Morbi viverra commodo enim, vel interdum quam. Integer eget elit vitae sem rutrum gravida facilisis sit amet urna. Nullam feugiat ultrices auctor. Morbi neque diam, dictum quis blandit a, tincidunt nec eros. Donec eu aliquet ante. Pellentesque nec magna in turpis eleifend posuere sed sit amet lacus. Cras sed ante eu sem consectetur molestie. Suspendisse vitae pharetra leo, sed facilisis nisi. Integer pretium mollis quam, in placerat neque hendrerit ac.</p>
+      </div>
+      <hr>
+      <p>박스 주의에 텍스트가 배열되고, 박스 아래에도 텍스트가 있습니다. 여기에 overflow 속성을 추가한 후 속성값을 auto로 하면 다음과 같이 만들어집니다.</p>
+      
+      <div class="a"></div>
+      <div class="b1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in arcu a nisl convallis mollis et sit amet nulla. Nulla vestibulum dapibus eros vel imperdiet. Donec nec fringilla urna. Donec vel viverra nulla. Suspendisse mi leo, venenatis at magna efficitur, efficitur malesuada lorem. Etiam semper velit iaculis turpis maximus interdum. Fusce commodo dolor a faucibus mattis. Maecenas ac aliquet ex. Aliquam sagittis justo et risus facilisis porta. Vestibulum euismod at risus gravida sodales. Maecenas tincidunt accumsan fringilla. Aliquam imperdiet finibus justo, vel pulvinar mauris suscipit sed. Sed nec arcu nec lorem dignissim lacinia tempus sit amet elit. Vestibulum ac aliquam sem. Etiam aliquam nibh vel libero rhoncus consectetur. Ut scelerisque velit in tortor accumsan convallis. Donec quis lobortis magna, id venenatis mauris. Morbi viverra commodo enim, vel interdum quam. Integer eget elit vitae sem rutrum gravida facilisis sit amet urna. Nullam feugiat ultrices auctor. Morbi neque diam, dictum quis blandit a, tincidunt nec eros. Donec eu aliquet ante. Pellentesque nec magna in turpis eleifend posuere sed sit amet lacus. Cras sed ante eu sem consectetur molestie. Suspendisse vitae pharetra leo, sed facilisis nisi. Integer pretium mollis quam, in placerat neque hendrerit ac.</p>
+      </div>
+      <p>overflow 속성값을 hidden, scoll로 바꾸어도 비슷한 결과가 나옵니다. 요소를 출력하는 가로폭 전체를 줄이는 효과가 있습니다.</p>
+</body>
+</html>

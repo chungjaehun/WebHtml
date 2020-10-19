@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Tips | Dropdown Menu</title>
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:16px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+            blockquote {
+                  border: 1px solid #27a9e3;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 10px solid #27a9e3;
+            }
+
+            h1.st:before {
+                  content: "String ";
+                  color: red;
+            }
+            h1.ur:before {
+                  content: url( "/imags/200x200.jpg" );
+                  margin-right: 10px;
+            }
+            h1.at:before {
+                  content: attr( class );
+                  margin-right: 10px;
+            }ㄴ
+
+      </style>
+</head>ㄴㄴ
+<body>
+      <h2>content / 요소 앞 또는 뒤에 문자열 등 콘텐트 만들기</h2>
+      <p>content 속성은 선택한 요소의 내용 앞이나 뒤에 콘텐트를 붙입니다.</p>
+      <p>예를 들어 p 요소 내용 앞에 콘텐트를 넣으려면</p>
+<pre class="comment">
+p:before {
+      content: xxx;
+}
+</pre>
+      <P>p 요소 내용 뒤에 붙이려면</P>
+<pre class="comment">
+p:after {
+      content: xxx;
+}
+</pre>   
+      <p>이미지를 넣고 싶다면 다음과 같이 합니다.</p>
+<pre class="comment">
+p:before {
+      content: url( "path/abc.png" );
+}
+</pre>
+
+      <P>선택한 요소의 속성값을 출력할 수도 있습니다. 예를 들어 p 요소의 class 값을 나타내려면 다음과 같이 합니다.</P>
+<pre class="comment">
+p:before {
+      content: attr( class );
+}
+</pre>
+
+      <blockquote>
+            <p>예제</p>
+      </blockquote>
+      <h1 class="st">Lorem</h1>
+      <h1 class="ur">Ipsum</h1>
+      <h1 class="at">Dolor</h1>
+
+</body>
+</html>

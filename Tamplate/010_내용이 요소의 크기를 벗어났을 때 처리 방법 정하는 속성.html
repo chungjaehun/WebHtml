@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Tips | Dropdown Menu</title>
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:16px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+            blockquote {
+                  border: 1px solid #27a9e3;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 10px solid #27a9e3;
+            }
+
+            .box {
+                  width: 150px;
+                  height: 150px;
+                  background-color: #cccccc;
+                  float: left;
+                  margin-right: 10px;}
+            .vi {
+                  overflow: visible;
+            }
+            .hi {
+                  overflow: hidden;
+            }
+            .sc {
+                  overflow: scroll;
+            }
+            .au {
+                  overflow: auto;
+            }
+
+      </style>
+</head>
+<body>
+      <h2>overflow / 내용이 요소의 크기를 벗어났을 때 처리 방법 정하는 속성</h2>
+      <blockquote>
+            <p>개요</p>
+      </blockquote>
+      <p>overflow는 내용이 요소의 크기를 벗어났을 때 어떻게 처리할지를 정하는 속성입니다.</p>
+
+      <blockquote>
+            <p>문법</p>
+      </blockquote>
+      <nav class="comment">overflow: visible | hidden | scroll | auto | initial | inherit</nav>
+      <ul>
+            <li>visible : 박스를 넘어가도 보여줍니다.</li>
+            <li>hidden : 박스를 넘어간 부분은 보이지 않습니다.</li>
+            <li>scroll : 박스를 넘어가든 넘어가지 않든 스크롤바가 나옵니다.</li>
+            <li>auto : 박스를 넘어가지 않으면 스크롤바가 나오지 않고, 박스를 넘어갈 때에는 스크롤바가 나옵니다.</li>
+            <li>initial : 기본값으로 설정합니다.</li>
+            <li>inherit : 부모 요소의 속성값을 상속받습니다.</li>
+      </ul>
+
+      <blockquote>
+            <p>예제</p>
+      </blockquote>
+
+      <div class="box vi">
+            <h3>visible</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet.</p>
+      </div>
+      <div class="box hi">
+            <h3>hidden</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet.</p>
+      </div>
+      <div class="box sc">
+            <h3>scroll</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet.</p>
+      </div>
+      <div class="box au">
+            <h3>auto</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet.</p>
+      </div>
+
+  
+</body>
+</html>

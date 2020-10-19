@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Tips | Dropdown Menu</title>
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:16px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+            blockquote {
+                  border: 1px solid #27a9e3;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 10px solid #27a9e3;
+            }
+
+            table {
+                  width: 100%;
+            }
+            td {
+                  border: 1px solid #dadada;
+            }
+            td:first-child {
+                  width: 100px;
+            }
+            .img1 {
+                  max-width: 100%;
+            }
+
+            .table1{
+                  table-layout: fixed;
+            }
+            .table1 td:first-child {
+                  width: 300px;
+            }
+      </style>
+</head>
+<body>
+      <h2>IE에서 표의 셀 안의 이미지 크기 설정하는 방법</h2>
+      <p>표의 셀 안에 200x200 크기의 이미지를 넣고, 셀의 가로 크기를 100px로 정해도, 이미지는 200x200 크기로 나옵니다. 셀의 크기에 맞게 이미지가 줄어들게 하는 방법은 두가지가 있습니다.</p>
+     
+      <table>
+            <tr>
+                  <td>100px</td>
+                  <td></td>
+            </tr>
+            <tr>
+                  <td><img src="/imags/200x200.jpg" alt=""></td>
+                  <td></td>
+            </tr>
+      </table>
+      <blockquote>
+            <p>방법 1</p>
+      </blockquote>
+      <p>이미지의 가로 크기의 최댓값을 100%로 합니다.</p>
+      <table>
+            <tr>
+                  <td>100px</td>
+                  <td></td>
+            </tr>
+            <tr>
+                  <td><img class="img1" src="/imags/200x200.jpg" alt=""></td>
+                  <td></td>
+            </tr>
+      </table>
+      <p>그런데 이 방법은 IE에서 제대로 작동하지 않습니다.</p>
+      <p>셀 안의 이미지 크기를 100%로 하면 줄어들기는 하는데...</p>
+      <p>셀의 크기를 250px로 했을 때 확대가 된다는 단점이 있습니다.</p>
+      <blockquote>
+            <p>방법 2</p>
+      </blockquote>
+      <p>table에 table-layout: fixed;를 추가합니다. 그러면 셀의 크기보다 이미지가 크면 이미지가 줄어들고, 셀의 크기가 이미지보다 크면 이미지 원본 크기만큼만 나옵니다.</p>
+      <table class="table1">
+            <tr>
+                  <td>300px</td>
+                  <td></td>
+            </tr>
+            <tr>
+                  <td><img class="img1" src="/imags/200x200.jpg" alt=""></td>
+                  <td></td>
+            </tr>
+      </table>
+      
+      
+</body>
+</html>

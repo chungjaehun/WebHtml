@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS Tips | Dropdown Menu</title>
+      <style>
+            body {
+                  background: #fff; color:#505050;
+                  font-family: 'Malgun guthic', "Segoe UI', Tahoma, Geneva, Verdana";
+                  font-size:16px;
+            }
+            li{
+                  line-height: 1.6;
+                  margin-bottom: 10px;
+            }
+            pre {
+                  font-family: Consolas, monospace;
+                  font-size: 18px;
+                  padding-left: 20px;
+                  padding-top: 10px;
+            }
+            .comment{
+                  background-color: burlywood;
+                  border-top: 1px solid #505050;
+                  border-bottom: 1px solid #505050;
+                  padding: 10px;
+            }
+            blockquote {
+                  border: 1px solid #27a9e3;
+                  margin-left: 0px;
+                  margin-right: 0px;
+                  padding-left: 20px;
+                  padding-right: 20px;
+                  border-left: 10px solid #27a9e3;
+            }
+
+            div {
+                  border: 1px solid #bcbcbc;
+            }
+            .jb-table {
+                  display: table;
+                  width: 100%;
+            }
+            .jb-table-row {
+                  display: table-row;
+            }
+            .jb-table-cell {
+                  display: table-cell;
+                  padding: 0px 20px;
+                  height: 150px;
+            }
+            .jb-top {
+                  vertical-align: top;
+            }
+            .jb-middle {
+                  vertical-align: middle;
+            }
+            .jb-bottom {
+                  vertical-align: bottom;
+            }
+
+      </style>
+</head>
+<body>
+      <h2>display 속성으로 표 만들기 - table, table-row, table-cell</h2>
+      <blockquote>
+            <p>display 속성값 중 표와 관련된 값들</p>
+      </blockquote>
+      <p>display 속성값으로 table, table-row, table-cell 등을 사용해서 요소를 표(table)처럼 표현할 수 있습니다. 표처럼 보이기 위해 사용할 수 있는 속성값들은 다음과 같습니다.</p>
+      <ul>
+            <li>table : &lt;table&gt; 요소처럼 표현합니다.</li>
+            <li>table-caption : <caption> 요소처럼 표현합니다.</li>
+            <li>table-column-group : <colgroup> 요소처럼 표현합니다.</li>
+            <li>table-header-group : <thead> 요소처럼 표현합니다.</li>
+            <li>table-footer-group : <tfoot> 요소처럼 표현합니다.</li>
+            <li>table-row-group : <tbody> 요소처럼 표현합니다.</li>
+            <li>table-cell : <td> 요소처럼 표현합니다.</li>
+            <li>table-column : <col> 요소처럼 표현합니다.</li>
+            <li>table-row : <tr> 요소처럼 표현합니다.</li>
+      </ul>
+      <p>위의 속성값으로 표처럼 표현되도록 만든 후에는, 표를 꾸미는 것과 같은 방법으로 해당 요소를 꾸밀 수 있습니다. 주의할 점은, IE의 경우 8 이상에서 지원한다는 것입니다.</p>
+      <h3>예제</h3>
+      <div class="jb-table">
+            <div class="jb-table-row">
+                  <div class="jb-table-cell">
+                  <p>Lorem</p>
+                  </div>
+                  <div class="jb-table-cell">
+                  <p>Ipsum</p>
+                  </div>
+                  <div class="jb-table-cell">
+                  <p>Dolor</p>
+                  </div>
+            </div>
+            <div class="jb-table-row">
+                  <div class="jb-table-cell jb-top">
+                  <p>Lorem</p>
+                  </div>
+                  <div class="jb-table-cell jb-middle">
+                  <p>Ipsum</p>
+                  </div>
+                  <div class="jb-table-cell jb-bottom">
+                  <p>Dolor</p>
+                  </div>
+            </div>
+      </div>
+
+</body>
+</html>
